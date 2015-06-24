@@ -1,0 +1,32 @@
+<ul>
+	<div>
+		<ul style="margin-bottom: 0px;">
+			<li ng-click="setCurrent(1)">
+				<a tooltip-angular
+                   tooltip-title="First page"> &lt;&lt; </a>
+			</li>
+			<li ng-click="setCurrent(pagination.current - 1)">
+				<a tooltip-angular
+                   tooltip-title="Previous page">&lt;</a>
+			</li>
+		</ul>
+
+		<span>
+			<input ng-model="pagination.current" class="form-control-pagination " ng-enter="goToPage()"
+				   style="width:40px; margin:0 5px"/>
+			<span  style="margin:0 5px 0 0; line-height:2.5"> of {{pagination.last}}
+			</span>
+		</span>
+
+		<ul style="margin-bottom: 0px;">
+			<li ng-click="setCurrent(pagination.current + 1)">
+				<a tooltip-angular
+                   tooltip-title="Next page">&gt;</a>
+			</li>
+			<li ng-click="setCurrent(pagination.last)">
+				<a tooltip-angular
+                   tooltip-title="Last page">&gt;&gt;</a>
+			</li>
+		</ul>
+	</div>
+</ul>
