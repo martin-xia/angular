@@ -1,17 +1,12 @@
-/**
- * 
- */
-
-
 /*/**
- * Directives for Pagination Allocation in Editor modal screen for IT Financial Management
+ * Directives for Pagination
  *
  * @Martin.xia
  *
  */
 var DEFAULT_ID = '__default';
 
-angular.module('workbenchControllers')
+angular.module('miniapp')
 	.directive('ngEnter', [function() {
 		return {
 			link: function(scope, element, attrs) {
